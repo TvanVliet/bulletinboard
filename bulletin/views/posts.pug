@@ -1,0 +1,17 @@
+doctype html
+html
+	head
+		link(rel='stylesheet', href='static/main.css', type='text/css')
+		title Bulletin Board
+
+	body
+		h1 Supra Mayro 64
+		img(src="static/images/mayro.gif")
+		p Your message:
+		h2 Title: #{title}
+		p Message: #{message}
+		p has been posted.
+		br
+		button <a href="/allposts">See all posts</a>
+		br
+		button <a href="/">Back</a>

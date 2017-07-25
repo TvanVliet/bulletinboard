@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		link(rel='stylesheet', href='static/main.css', type='text/css')
+		title Bulletin Board
+
+	body
+		h1 Supra Mayro 64
+		img(src="static/images/mayro.gif")
+		h1 Bulletin Board
+		p
+		form(id="form", action='/addpost', method='POST')
+			label(for='title') Title:
+			input(type='text', name='title', value='')
+			br
+			label(for='Message')  Message:
+			br
+			input(type='text', id="message", name='message', value='')
+			br
+			input(type='submit', value='Post message', )
+			br
+			button <a href="/">Refresh</a>
+			br
+			button <a href="/allposts">See all messages</a>

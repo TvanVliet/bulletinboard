@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		link(rel='stylesheet', href='static/main.css', type='text/css')
+		title Bulletin Board
+
+	body
+		h1 Supra Mayro 64
+		img(src="static/images/mayro.gif")
+		h1 Messages:
+		ul
+		each val in posts
+			h2 Title:
+			p= val.title
+			h3 Message:
+			p= val.body
+		br
+		button <a href="/">Back</a>

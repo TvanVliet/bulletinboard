@@ -1,0 +1,10 @@
+body {
+	text-align: center;
+	background-color: blue;
+	color: red;
+}
+
+#message {
+	height: 250px;
+	width: 50%;
+}
